@@ -1,17 +1,8 @@
-def producto(a, b)
-  return a * b
+# Es cansado hacer modificacione suno a uno a cada rato :(
 
-def resta(a, b)
-  return a - b
-
-def suma(a, b)
+def suma(a,b):
   return a + b
   
-a = int(input("Primer numero: "))
-b = int(input("Segundo numero: "))
-print(suma(a,b))
-print(resta(a,b))
-print("Aqui multimplicamos")
-print(producto(a,b))
+suma(5,6)
 
 
