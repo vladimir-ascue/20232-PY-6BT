@@ -1,18 +1,14 @@
-def producto(a, b)
+def prod(a, b)
   return a * b
 
-def resta(a, b)
+def res(a, b)
   return a - b
 
-def suma(a, b)
+def sum(a, b)
   return a + b
   
 a = int(input("Primer numero: "))
 b = int(input("Segundo numero: "))
-print(suma(a,b))
-print(resta(a,b))
-print("Aqui multimplicamos")
-print(producto(a,b))
-
-###
-
+print(sum(a,b))
+print(res(a,b))
+print(prod(a,b))
