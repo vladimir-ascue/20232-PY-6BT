@@ -1,10 +1,1 @@
-def res(a, b)
-  return a - b
 
-def sum(a, b)
-  return a + b
-  
-a = int(input("Primer numero: "))
-b = int(input("Segundo numero: "))
-print(sum(a,b))
-print(res(a,b))
