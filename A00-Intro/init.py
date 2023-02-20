@@ -7,9 +7,8 @@ def operaciones():
     print("Operacion dentro de la funcion >> ",resta(654-321))
 
 def main():
-
-    x = int(input("ingrese su primer numerito: "))
-    y = int(input("ingrese su segundo numerito: "))
+    x = int(input("Ingrese su primer numerito: "))
+    y = int(input("Ingrese su segundo numerito: "))
     print(suma(x, y))
     pass
 
