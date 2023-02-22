@@ -10,6 +10,13 @@ def multiplicacion(a, b):
 def division(a, b):
     return a / b
 
+def validaCero(divisor):
+    if( divisor == 0):
+        print("Error: El divisor no puede ser cero.")
+        return leerEntero("  Nuevo divisor (0 para salir):")
+    else:
+        return divisor
+
 # def leerEntero(mensaje):
 #     numero = 0
 #     try:
@@ -25,12 +32,16 @@ def division(a, b):
 #         return "Error... debe ingresar un entero."
 
 def leerEntero(mensaje):
-    while True:
+    contador = 0
+    while contador < 3:
         try:
-            num = int(input(mensaje))
-            break;
+            # num = int(input(mensaje))
+            return int(input(mensaje))
+            # break;
         except:
             print(": Entero no válido..")
+            contador = contador + 1
+            # return int(input(mensaje))
 
     # contador == 0
     # while contador < 3:
@@ -48,6 +59,13 @@ def menu():
 def main():
     opcion = menu()
     print("Opcion = ", opcion)
+
+    # match(opcion):
+    #     case 1:
+    #     case 2:
+    #     case 3:
+    #     case 4:
+    
     if opcion == 0:
         print("Chau ...")
     else:
@@ -61,7 +79,14 @@ def main():
                     print(multiplicacion(leerEntero("Num1:"), leerEntero("Num2")))
                 else:
                     if opcion == 4:
-                        print(division(leerEntero("Num1:"), leerEntero("Num2")))
+                        num1 = leerEntero("Num1:")
+                        num2 = validaCero(leerEntero("Num2"))
+                        if (num2 != 0):
+                            print(division(num1,num2))
+                        else:
+                            print("El divisor sigue siendo cero. Regresando al menu." )
                     else:
                         print("Opcion inválida")
+
+
 main()
