@@ -13,7 +13,6 @@ data = {"nombre": "vladimir",
 
 print ("Hobbies =", c["hobbies"]["Peliculas"])
 
-
 # print(b)
 #
 # print("b[0] = ",b[0])
