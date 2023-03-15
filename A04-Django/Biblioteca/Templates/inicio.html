@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="{% static 'css/estilos.css' %}">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1> Saludos desde la plantilla</h1>
+    <img src="{% static 'img/git.png' %}" width="65px">
+    <img src="{% static 'img/google.png' %}" width="65px">
+    <p>
+        {{ nombre }} {{ apellido }} {{ parametro }}
+    </p>
+</body>
+</html>
