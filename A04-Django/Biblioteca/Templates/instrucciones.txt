@@ -1,0 +1,18 @@
+// Crear una app
+python ./manage.py startapp {[app]}
+
+bd: db.sqlite3
+usuario: vlaslov
+contraseña: khipu2023
+
+// Revisar las APPs
+python ./manage.py check {[app]}
+
+// Ejecutar la migracion inicial
+python ./manage.py make migrations
+
+// Ejecutar la migracion SQL
+python ./manage.py make sqlmigrate {[app]} {[NroMigracion]}
+
+// Generar la BD
+python ./manage.py migrate

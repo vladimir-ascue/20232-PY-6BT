@@ -1,0 +1,7 @@
+1. Para crear un projecto Django:
+  $ django-admin startproject {[MiProyecto]}
+
+2. Para Ejecutar el proyecto:
+(  Asegurarse de estar en la misma carpeta donde esta el archivo manage.py   )
+
+  $ python ./manage.py runserver
