@@ -1,8 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from Biblioteca.views import inicio
+from Biblioteca.views import inicio, contacto
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('ini/<nombre>', inicio),
+   path('admin/', admin.site.urls),
+    path('', inicio),
+    path('contacto/', contacto),
+    path('clibro/', contacto),
 ]
