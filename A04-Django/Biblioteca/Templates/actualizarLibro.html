@@ -11,10 +11,16 @@
         <label for="codigo">Codigo:</label>
         <input type="text" name="codigo">
 
+        <label for="titulo">Codigo:</label>
+        <input type="text" name="titulo">
+
+        <input type="submit" value="actualizar">
     </form>
 
-    {% if titulo %}
-        libro: {{ titulo }}, actualizado correctamente.
+    {% if libro %}
+        <H3>Libro: {{ libro.codigo }}<H3>
+        <p>Combio su titulo a {{ libro.titulo }}</p>
+        <strong>Actualizado exitosa.</strong>
     {% endif %}
 
 </body>

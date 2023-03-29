@@ -16,13 +16,25 @@ def crearLibro(request):
         return render(request, "crearLibro.html", {"titulo": Titulo})
     return render(request, "crearLibro.html")
 
-# def actiualizarLibro(request):
-#     if request.method == 'POST':
-#         Codigo = request.POST['codigo']
-#
-#         librito = libro.Objects.all(codigo = Codigo)
-#         librito.estado = "inactivo"
-#         librito.save()
-#
-#         return render(request, "actualizarLibro.html", {"titulo": Titulo})
-#     return render(request, "creaactualizarLibro.html")
+def actualizarLibro(request):
+    if request.method == 'POST':
+        Codigo = request.POST['codigo']
+        nuevoTitulo = request.POST['titulo']
+
+        librito = libro.objects.get(codigo = Codigo)
+        print(librito)
+        #libro.Objects.all(codigo = Codigo)
+        librito.titulo = nuevoTitulo
+        librito.save()
+        print(librito)
+
+        return render(request, "actualizarLibro.html", {"libro": librito})
+    return render(request, "actualizarLibro.html")
+
+def listarLibros(request):
+    if request.method == 'POST':
+        libros = libro.objects.all()
+        print ( libros )
+        return render(request, "listarLibros.html", {"libros": libros})
+    return render(request, "listarLibros.html")
+

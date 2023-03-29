@@ -17,5 +17,12 @@
       <jdbc-url>jdbc:sqlite:D:\OneDrive\Documentos\Trabajo\Clientes\khipu\Python\2023-2 6BT\20232-PY-6BT\A04-Django\Biblioteca\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="db.sqlite3" uuid="51d06233-608a-426a-91a2-e7c8329c236f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\OneDrive\Documentos\Trabajo\Clientes\khipu\Python\2023-2 6BT\20232-PY-6BT\A04-Django\Biblioteca\db.sqlite3</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
